@@ -1,2 +1,5 @@
-# photocopy-collage
- A WordPress plugin that creates photocopy-style collages. 
+# Photocopy Collage
+
+A WordPress plugin that uses Block Styles to create photocopy-style collages.
+
+It barely works!
