@@ -27,13 +27,11 @@ if ( function_exists( 'register_block_style' ) ) {
 		/**
 		 * Register block styles
 		 */
-
-		/* Image */
 		register_block_style(
 			'core/image',
 			array(
-				'name'         => 'collage-a',
-				'label'        => 'Collage A',
+				'name'         => 'photocopy',
+				'label'        => 'Photocopy',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
