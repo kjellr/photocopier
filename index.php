@@ -5,7 +5,7 @@
  * Plugin URI: https://kjellr.com
  * Description: Make your blocks look like photocopies.
  * Version: 1.0
- * Author: kjellr
+ * Author: Kjell Reigstad
  */
 
 /**
@@ -29,6 +29,22 @@ if ( function_exists( 'register_block_style' ) ) {
 		 */
 		register_block_style(
 			'core/image',
+			array(
+				'name'         => 'photocopy',
+				'label'        => 'Photocopy',
+				'style_handle' => 'photocopier-stylesheet',
+			)
+		);
+		register_block_style(
+			'core/gallery',
+			array(
+				'name'         => 'photocopy',
+				'label'        => 'Photocopy',
+				'style_handle' => 'photocopier-stylesheet',
+			)
+		);
+		register_block_style(
+			'core/media-text',
 			array(
 				'name'         => 'photocopy',
 				'label'        => 'Photocopy',

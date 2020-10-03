@@ -1,19 +1,27 @@
-
 /**
- * Image Block
+ * Photocopier Plugin
+ * 
+ * Block Styles:
+ * - Image Block
+ * - Gallery Block
+ * - Media & Text Block
  */
 
-/* Image Rules */
-
-.wp-block-image.is-style-photocopy {
+.wp-block-image.is-style-photocopy,
+.wp-block-gallery.is-style-photocopy .blocks-gallery-item figure,
+.wp-block-media-text.is-style-photocopy figure {
 	position: relative;
 }
 
-.wp-block-image.is-style-photocopy img {
+.wp-block-image.is-style-photocopy img,
+.wp-block-gallery.is-style-photocopy .blocks-gallery-item img,
+.wp-block-media-text.is-style-photocopy figure img {
 	filter: grayscale(100%) contrast(800%);
 }
 
-.wp-block-image.is-style-photocopy:before {
+.wp-block-image.is-style-photocopy:before,
+.wp-block-gallery.is-style-photocopy .blocks-gallery-item figure:before,
+.wp-block-media-text.is-style-photocopy figure:before {
 	content: "";
 	position: absolute;
 	top: 0;
