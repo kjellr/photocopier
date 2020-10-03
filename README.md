@@ -1,5 +1,3 @@
-# Photocopy Collage
+# Photocopier
 
-A WordPress plugin that uses Block Styles to create photocopy-style collages.
-
-It barely works!
+A WordPress plugin that adds a photocopier-style filter to your blocks, using block patterns.
