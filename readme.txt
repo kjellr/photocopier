@@ -48,3 +48,9 @@ GNU General Public License for more details.
 
 The noise pattern used is derived from "Kraft Paper #12" on Patternlet.com CC0.
 https://patternlet.com/102-kraft-paper-12-pattern/
+
+Plugin icon and banner derived from "Abstract Concrete" by Sarah Pflug. CC0.
+https://stocksnap.io/photo/abstract-concrete-QHO4YAWVRM
+
+Screenshot uses "Urban Architecture" by Joe deSousa. CC0
+https://stocksnap.io/photo/urban-architecture-EXGXZZJHQJ
