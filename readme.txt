@@ -52,5 +52,5 @@ https://patternlet.com/102-kraft-paper-12-pattern/
 Plugin icon and banner derived from "Abstract Concrete" by Sarah Pflug. CC0.
 https://stocksnap.io/photo/abstract-concrete-QHO4YAWVRM
 
-Screenshot uses "Urban Architecture" by Joe deSousa. CC0
-https://stocksnap.io/photo/urban-architecture-EXGXZZJHQJ
+Screenshot uses "Fall Leaves" by Free Nature Stock. CC0
+https://stocksnap.io/photo/fall-leaves-RSUKHP2EHX
