@@ -2,7 +2,7 @@
 Contributors: kjellr
 Tags: photocopy, Gutenberg, blocks, filter, block style
 Requires at least: 5.0
-Tested up to: 5.4.1
+Tested up to: 5.5.1
 Requires PHP: 5.2.4
 Stable tag: trunk
 License: GPL v2 or later
@@ -25,9 +25,17 @@ This plugin adds a block style called \"Photocopy\" to the Image, Gallery, and M
 
 = How does this work? =
 
-The block style applies a handful of CSS filters to your images. 
+The block style applies a handful of CSS filters to your images. It looks kind of like a photocopy. 
+
+= Any caveats I should know about? =
+
+It doesn't play great with Image block captions at the moment. The the overlay pattern sometimes shows up behind it. 
 
 == Changelog ==
+= 1.1 =
+* Improved Pattern
+* Fix the way the pattern maps to the image. 
+
 = 1.0 =
 * Initial Release
 
@@ -46,10 +54,10 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-The noise pattern used is derived from "Kraft Paper #12" on Patternlet.com CC0.
-https://patternlet.com/102-kraft-paper-12-pattern/
+The noise pattern used is derived from "Noisy Pattern" on Patternlet.com CC0.
+https://patternlet.com/noisy-pattern/
 
-Plugin icon and banner derived from "Abstract Concrete" by Sarah Pflug. CC0.
+Plugin icon derived from "Abstract Concrete" by Sarah Pflug. CC0.
 https://stocksnap.io/photo/abstract-concrete-QHO4YAWVRM
 
 Screenshot uses "Fall Leaves" by Free Nature Stock. CC0

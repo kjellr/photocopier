@@ -25,12 +25,18 @@
 	content: "";
 	position: absolute;
 	top: 0;
-	bottom: 2.5em;
+	bottom: 0;
 	left: 0;
 	right: 0;
-	background-image: url('./assets/noise.jpg');
+	background-image: url('./assets/noise.gif');
 	background-size: 1024px 1024px;
 	z-index: 500;
 	mix-blend-mode: exclusion;
 	filter: grayscale(100%) contrast(200%);
+}
+
+/* Try not to overlap the caption in the editor */
+.wp-block-image.is-selected.is-style-photocopy:before,
+.wp-block-image.is-focused.is-style-photocopy:before {
+	bottom: calc( 1.5em + 13px );
 }
