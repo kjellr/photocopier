@@ -29,10 +29,19 @@
 	left: 0;
 	right: 0;
 	background-image: url('./assets/noise.gif');
-	background-size: 1024px 1024px;
+	background-size: 2048px 2048px;
 	z-index: 500;
 	mix-blend-mode: exclusion;
 	filter: grayscale(100%) contrast(200%);
+}
+
+/* Use a higher-resolution noise pattern on high-res screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+	.wp-block-image.is-style-photocopy:before,
+	.wp-block-gallery.is-style-photocopy .blocks-gallery-item figure:before,
+	.wp-block-media-text.is-style-photocopy figure:before {
+		background-size: 1024px 1024px;
+	}
 }
 
 /* Try not to overlap the caption in the editor */
