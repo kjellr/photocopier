@@ -7,21 +7,24 @@
  * - Media & Text Block
  */
 
+/**
+ * Shared Styles.
+ */
 .wp-block-image.is-style-photocopy,
 .wp-block-gallery.is-style-photocopy .blocks-gallery-item figure,
-.wp-block-media-text.is-style-photocopy figure {
+.wp-block-media-text.is-style-photocopy figure,
+.wp-block-image.is-style-photocopy-warped,
+.wp-block-gallery.is-style-photocopy-warped .blocks-gallery-item figure,
+.wp-block-media-text.is-style-photocopy-warped figure {
 	position: relative;
-}
-
-.wp-block-image.is-style-photocopy img,
-.wp-block-gallery.is-style-photocopy .blocks-gallery-item img,
-.wp-block-media-text.is-style-photocopy figure img {
-	filter: grayscale(100%) contrast(800%);
 }
 
 .wp-block-image.is-style-photocopy:before,
 .wp-block-gallery.is-style-photocopy .blocks-gallery-item figure:before,
-.wp-block-media-text.is-style-photocopy figure:before {
+.wp-block-media-text.is-style-photocopy figure:before,
+.wp-block-image.is-style-photocopy-warped:before,
+.wp-block-gallery.is-style-photocopy-warped .blocks-gallery-item figure:before,
+.wp-block-media-text.is-style-photocopy-warped figure:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -39,13 +42,40 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
 	.wp-block-image.is-style-photocopy:before,
 	.wp-block-gallery.is-style-photocopy .blocks-gallery-item figure:before,
-	.wp-block-media-text.is-style-photocopy figure:before {
+	.wp-block-media-text.is-style-photocopy figure:before,
+	.wp-block-image.is-style-photocopy-warped:before,
+	.wp-block-gallery.is-style-photocopy-warped .blocks-gallery-item figure:before,
+	.wp-block-media-text.is-style-photocopy-warped figure:before {
 		background-size: 1024px 1024px;
 	}
 }
 
-/* Try not to overlap the caption in the editor */
+/**
+ * Individual Styles
+ */
+.wp-block-image.is-style-photocopy img,
+.wp-block-gallery.is-style-photocopy .blocks-gallery-item img,
+.wp-block-media-text.is-style-photocopy figure img {
+	filter: grayscale(100%) contrast(800%);
+}
+
+/* Try not to overlap the caption in the editor ¯\_(ツ)_/¯ */
 .wp-block-image.is-selected.is-style-photocopy:before,
-.wp-block-image.is-focused.is-style-photocopy:before {
+.wp-block-image.is-selected.is-style-photocopy-warped:before,
+.wp-block-image.is-focused.is-style-photocopy:before,
+.wp-block-image.is-focused.is-style-photocopy-warped:before {
 	bottom: calc( 1.5em + 13px );
+}
+
+/* Warped */
+.wp-block-image.is-style-photocopy-warped img,
+.wp-block-gallery.is-style-photocopy-warped .blocks-gallery-item img,
+.wp-block-media-text.is-style-photocopy-warped figure img {
+	filter: url(#photocopy-filter-warp) grayscale(100%) contrast(800%);
+}
+
+#photocopier-svg-filter {
+	position: absolute;
+	height: 0;
+	width: 0;
 }

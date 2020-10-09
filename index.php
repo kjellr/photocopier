@@ -49,6 +49,8 @@ if ( function_exists( 'register_block_style' ) ) {
 		/**
 		 * Register block styles
 		 */
+
+		// Image
 		register_block_style(
 			'core/image',
 			array(
@@ -57,6 +59,18 @@ if ( function_exists( 'register_block_style' ) ) {
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
+
+		// Image (Warped)
+		register_block_style(
+			'core/image',
+			array(
+				'name'         => 'photocopy-warped',
+				'label'        => 'Warped Photocopy (Experimental)',
+				'style_handle' => 'photocopier-stylesheet',
+			)
+		);
+
+		// Gallery
 		register_block_style(
 			'core/gallery',
 			array(
@@ -65,6 +79,18 @@ if ( function_exists( 'register_block_style' ) ) {
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
+
+		// Gallery (Warped)
+		register_block_style(
+			'core/gallery',
+			array(
+				'name'         => 'photocopy-warped',
+				'label'        => 'Warped Photocopy (Experimental)',
+				'style_handle' => 'photocopier-stylesheet',
+			)
+		);
+
+		// Media & Text
 		register_block_style(
 			'core/media-text',
 			array(
@@ -73,7 +99,26 @@ if ( function_exists( 'register_block_style' ) ) {
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
+
+		// Media & Text (Warped)
+		register_block_style(
+			'core/media-text',
+			array(
+				'name'         => 'photocopy-warped',
+				'label'        => 'Warped Photocopy (Experimental)',
+				'style_handle' => 'photocopier-stylesheet',
+			)
+		);
 	}
 
 	add_action( 'init', 'photocopier_register_block_styles' );
 }
+
+/**
+ * Load the distortion SVG into the footer in the front end and editor.
+ */
+function photocopier_load_svg_filter() { 
+    echo "<svg id='photocopier-svg-filter'><filter id='photocopy-filter-warp' filterUnits='userSpaceOnUse' x='0' y='0'><feTurbulence numOctaves='1' seed='1' baseFrequency='0 0.015245'></feTurbulence><feDisplacementMap scale='80' in='SourceGraphic'></feDisplacementMap></filter></svg>;";
+}
+add_action('wp_footer', 'photocopier_load_svg_filter');
+add_action( 'admin_footer-post.php', 'photocopier_load_svg_filter' );
