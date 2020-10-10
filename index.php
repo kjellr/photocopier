@@ -4,7 +4,7 @@
  * Plugin Name: Photocopier
  * Plugin URI: https://kjellr.com
  * Description: Make your blocks look like photocopies.
- * Version: 1.0
+ * Version: 1.2
  * Author: Kjell Reigstad
  * 
  * Photocopier WordPress Plugin, 2020 Kjell Reigstad
@@ -65,7 +65,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/image',
 			array(
 				'name'         => 'photocopy-warped',
-				'label'        => 'Warped Photocopy (Experimental)',
+				'label'        => 'Warped Photocopy',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
@@ -85,7 +85,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/gallery',
 			array(
 				'name'         => 'photocopy-warped',
-				'label'        => 'Warped Photocopy (Experimental)',
+				'label'        => 'Warped Photocopy',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
@@ -105,7 +105,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/media-text',
 			array(
 				'name'         => 'photocopy-warped',
-				'label'        => 'Warped Photocopy (Experimental)',
+				'label'        => 'Warped Photocopy',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);

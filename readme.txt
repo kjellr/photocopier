@@ -29,9 +29,18 @@ The block style applies a handful of CSS filters to your images. It looks kind o
 
 = Are there any known issues? =
 
-It doesn't play great with Image block captions at the moment. The overlay pattern sometimes shows up behind it. 
+- It doesn't play great with Image block captions at the moment. The overlay pattern sometimes shows up behind it. 
+- The warped styles cut off the resize drag handles.
+
+= Can I contribute to this plugin? =
+
+- Of course! It's open source. Visit the [GitHub repository](https://github.com/kjellr/photocopier) to browse the code or submit ideas. 
 
 == Changelog ==
+= 1.2 =
+* Adds an experimental "Warped" block style.
+* Improved rendering of the pattern on different screen resolutions. 
+
 = 1.1 =
 * Improved Pattern
 * Fix the way the pattern maps to the image. 
