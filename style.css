@@ -74,6 +74,13 @@
 	filter: url(#photocopy-filter-warp) grayscale(100%) contrast(800%);
 }
 
+.wp-block-image.is-style-photocopy-warped,
+.wp-block-image.is-style-photocopy-warped .components-resizable-box__container,
+.wp-block-gallery.is-style-photocopy-warped .blocks-gallery-item,
+.wp-block-media-text.is-style-photocopy-warped figure {
+	overflow: hidden;
+}
+
 #photocopier-svg-filter {
 	position: absolute;
 	height: 0;
