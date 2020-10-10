@@ -26,8 +26,8 @@
  * Plugin icon derived from "Abstract Concrete" by Sarah Pflug. CC0.
  * https://stocksnap.io/photo/abstract-concrete-QHO4YAWVRM
  * 
- * Screenshot uses "Fall Leaves" by Free Nature Stock. CC0
- * https://stocksnap.io/photo/fall-leaves-RSUKHP2EHX
+ * Screenshots use "Moon Planet" by Stephen Rahn. CC0
+ * https://stocksnap.io/photo/moon-planet-Z6ETWLE1A2
  */
 
 /**
