@@ -118,7 +118,7 @@ if ( function_exists( 'register_block_style' ) ) {
  * Load the distortion SVG into the footer in the front end and editor.
  */
 function photocopier_load_svg_filter() { 
-    echo "<svg id='photocopier-svg-filter'><filter id='photocopy-filter-warp' filterUnits='userSpaceOnUse' x='0' y='0'><feTurbulence baseFrequency='0 0.021' seed='1' result='photocopy-turbulance'></feTurbulence><feDisplacementMap in='SourceGraphic' in2='photocopy-turbulance' scale='38' result='photocopy-displacement'></feDisplacementMap><feOffset dx='-14' dy='-9' result='photocopy-offset' in='photocopy-displacement'></feOffset><feComposite in='photocopy-offset' in2='SourceGraphic' result='photocopy-composite'></feComposite></filter></svg>;";
+    echo "<svg id='photocopier-svg-filter'><filter id='photocopy-filter-warp' filterUnits='userSpaceOnUse' x='0' y='0'><feTurbulence baseFrequency='0 0.021' seed='1' result='photocopy-turbulance'></feTurbulence><feDisplacementMap in='SourceGraphic' in2='photocopy-turbulance' scale='38' result='photocopy-displacement'></feDisplacementMap><feOffset dx='-14' dy='-9' result='photocopy-offset' in='photocopy-displacement'></feOffset><feComposite in='photocopy-offset' in2='SourceGraphic' result='photocopy-composite'></feComposite></filter></svg>";
 }
 add_action('wp_footer', 'photocopier_load_svg_filter');
 add_action( 'admin_footer-post.php', 'photocopier_load_svg_filter' );
