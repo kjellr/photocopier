@@ -4,7 +4,7 @@
  * Plugin Name: Photocopier
  * Plugin URI: https://kjellr.com
  * Description: Make your blocks look like photocopies.
- * Version: 1.2
+ * Version: 1.2.1
  * Author: Kjell Reigstad
  * 
  * Photocopier WordPress Plugin, 2020 Kjell Reigstad
