@@ -81,15 +81,6 @@
 	overflow: hidden;
 }
 
-h1.is-style-photocopy-warped:not(.is-selected),
-h2.is-style-photocopy-warped:not(.is-selected),
-h3.is-style-photocopy-warped:not(.is-selected),
-h4.is-style-photocopy-warped:not(.is-selected),
-h5.is-style-photocopy-warped:not(.is-selected),
-h6.is-style-photocopy-warped:not(.is-selected) {
-	filter: url(#photocopy-filter-warp);
-}
-
 #photocopier-svg-filter {
 	position: absolute;
 	height: 0;
