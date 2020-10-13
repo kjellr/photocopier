@@ -60,6 +60,16 @@ if ( function_exists( 'register_block_style' ) ) {
 			)
 		);
 
+		// Heading (Warped + Stretched)
+		register_block_style(
+			'core/heading',
+			array(
+				'name'         => 'photocopy-warped-stretched',
+				'label'        => 'Warped + Stretched',
+				'style_handle' => 'photocopier-stylesheet',
+			)
+		);
+
 		// Image
 		register_block_style(
 			'core/image',
@@ -126,6 +136,16 @@ if ( function_exists( 'register_block_style' ) ) {
 			array(
 				'name'         => 'photocopy-warped',
 				'label'        => 'Warped',
+				'style_handle' => 'photocopier-stylesheet',
+			)
+		);
+
+		// Paragraph (Warped + Stretched)
+		register_block_style(
+			'core/paragraph',
+			array(
+				'name'         => 'photocopy-warped-stretched',
+				'label'        => 'Warped + Stretched',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
