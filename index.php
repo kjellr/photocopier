@@ -55,7 +55,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/heading',
 			array(
 				'name'         => 'photocopy-warped',
-				'label'        => 'Warped',
+				'label'        => 'Warped (Experimental)',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
@@ -65,7 +65,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/heading',
 			array(
 				'name'         => 'photocopy-warped-stretched',
-				'label'        => 'Warped + Stretched',
+				'label'        => 'Warped + Stretched (Experimental)',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
@@ -135,7 +135,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/paragraph',
 			array(
 				'name'         => 'photocopy-warped',
-				'label'        => 'Warped',
+				'label'        => 'Warped (Experimental)',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
@@ -145,7 +145,7 @@ if ( function_exists( 'register_block_style' ) ) {
 			'core/paragraph',
 			array(
 				'name'         => 'photocopy-warped-stretched',
-				'label'        => 'Warped + Stretched',
+				'label'        => 'Warped + Stretched (Experimental)',
 				'style_handle' => 'photocopier-stylesheet',
 			)
 		);
